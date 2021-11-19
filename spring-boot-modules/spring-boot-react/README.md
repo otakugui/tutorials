@@ -27,3 +27,6 @@ CRUD simples.
 1. No terminal, acesse a pasta "framework"
 2. Rode o comando "npm start"
 3. A aplicação web iniciará em "http://localhost:3000".
+
+## Como acessar o Swagger
+http://localhost:8080/swagger-ui.html
