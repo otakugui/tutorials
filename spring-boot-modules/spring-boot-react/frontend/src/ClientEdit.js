@@ -52,7 +52,7 @@ async handleSubmit(event) {
 
     render() {
         const {item} = this.state;
-        const title = <h2>{item.id ? 'Edit Client' : 'Add Client'}</h2>;
+        const title = <h2>{item.id ? 'Editar Cliente' : 'Adicionar Cliente'}</h2>;
 
         return <div>
             <AppNavbar/>
@@ -60,18 +60,18 @@ async handleSubmit(event) {
                 {title}
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
-                        <Label for="name">Name</Label>
+                        <Label for="name">Nome</Label>
                         <Input type="text" name="name" id="name" value={item.name || ''}
                                onChange={this.handleChange} autoComplete="name"/>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="email">Email</Label>
+                        <Label for="email">E-mail</Label>
                         <Input type="text" name="email" id="email" value={item.email || ''}
                                onChange={this.handleChange} autoComplete="email"/>
                     </FormGroup>
                     <FormGroup>
-                        <Button color="primary" type="submit">Save</Button>{' '}
-                        <Button color="secondary" tag={Link} to="/clients">Cancel</Button>
+                        <Button color="primary" type="submit">Salvar</Button>{' '}
+                        <Button color="secondary" tag={Link} to="/clients">Cancelar</Button>
                     </FormGroup>
                 </Form>
             </Container>

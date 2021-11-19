@@ -39,8 +39,8 @@ class ClientList extends Component {
                 <td>{client.email}</td>
                 <td>
                     <ButtonGroup>
-                        <Button size="sm" color="primary" tag={Link} to={"/clients/" + client.id}>Edit</Button>
-                        <Button size="sm" color="danger" onClick={() => this.remove(client.id)}>Delete</Button>
+                        <Button size="sm" color="primary" tag={Link} to={"/clients/" + client.id}>Editar</Button>
+                        <Button size="sm" color="danger" onClick={() => this.remove(client.id)}>Apagar</Button>
                     </ButtonGroup>
                 </td>
             </tr>
@@ -51,15 +51,15 @@ class ClientList extends Component {
                 <AppNavbar/>
                 <Container fluid>
                     <div className="float-right">
-                        <Button color="success" tag={Link} to="/clients/new">Add Client</Button>
+                        <Button color="success" tag={Link} to="/clients/new">Adicionar Cliente</Button>
                     </div>
-                    <h3>Clients</h3>
+                    <h3>Clientes</h3>
                     <Table className="mt-4">
                         <thead>
                         <tr>
-                            <th width="30%">Name</th>
-                            <th width="30%">Email</th>
-                            <th width="40%">Actions</th>
+                            <th width="30%">Nome</th>
+                            <th width="30%">E-mail</th>
+                            <th width="40%">Ações</th>
                         </tr>
                         </thead>
                         <tbody>
