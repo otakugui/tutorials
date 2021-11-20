@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("API simples que implementa CRUD")
-                .description("Possui um recurso de teste simples pelo / e implementa CRUD simples da classe Client pelo /clients")
+                .description("Implementa CRUD simples da classe Client pelo /clients")
                 .version("1.0")
                 .build();
     }
